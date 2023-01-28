@@ -1,0 +1,928 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05EDA44124D73A5CEACEED35 /* Pods_TextRecognition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375649FF96168837B05B088A /* Pods_TextRecognition.framework */; };
+		3A9F01A96D3784C13F1E0FD0 /* Pods_TextRecognitionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C8F7E7DF4FA9BF5738ADB7 /* Pods_TextRecognitionTests.framework */; };
+		3D37660C28A6EC3C00BD7927 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D37660B28A6EC3C00BD7927 /* Main.storyboard */; };
+		3DB5A6A428A651E400A3EBA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5A6A328A651E400A3EBA8 /* AppDelegate.swift */; };
+		3DB5A6A628A651E400A3EBA8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5A6A528A651E400A3EBA8 /* SceneDelegate.swift */; };
+		3DB5A6A828A651E400A3EBA8 /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5A6A728A651E400A3EBA8 /* StartVC.swift */; };
+		3DB5A6AE28A651E400A3EBA8 /* TextRecognition.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5A6AC28A651E400A3EBA8 /* TextRecognition.xcdatamodeld */; };
+		3DB5A6B028A651E600A3EBA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB5A6AF28A651E600A3EBA8 /* Assets.xcassets */; };
+		3DB5A6B328A651E600A3EBA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB5A6B128A651E600A3EBA8 /* LaunchScreen.storyboard */; };
+		3DB5A6BE28A651E600A3EBA8 /* TextRecognitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5A6BD28A651E600A3EBA8 /* TextRecognitionTests.swift */; };
+		3DB5A6C828A651E600A3EBA8 /* TextRecognitionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5A6C728A651E600A3EBA8 /* TextRecognitionUITests.swift */; };
+		3DB5A6CA28A651E600A3EBA8 /* TextRecognitionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB5A6C928A651E600A3EBA8 /* TextRecognitionUITestsLaunchTests.swift */; };
+		6A092D12290F9B8B00C66CDD /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A092D11290F9B8B00C66CDD /* Utils.swift */; };
+		6A092D14290F9C4A00C66CDD /* ScanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A092D13290F9C4A00C66CDD /* ScanModel.swift */; };
+		6A092D16290F9F5D00C66CDD /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A092D15290F9F5D00C66CDD /* GradientView.swift */; };
+		6A092D18290FA13900C66CDD /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A092D17290FA13900C66CDD /* Extension.swift */; };
+		6A092D1A290FA6EF00C66CDD /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A092D19290FA6EF00C66CDD /* UserDefaultsExtension.swift */; };
+		6A092D1C290FAFC900C66CDD /* ScanModelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A092D1B290FAFC900C66CDD /* ScanModelCell.swift */; };
+		6A11C75F29101E1E00A7FD2B /* ScanHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A11C75E29101E1E00A7FD2B /* ScanHeaderCell.swift */; };
+		6A11C761291027FA00A7FD2B /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A11C760291027FA00A7FD2B /* DetailVC.swift */; };
+		6A4C059929150D9B00D56A28 /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4C059829150D9B00D56A28 /* SideMenuVC.swift */; };
+		6A4C059F291512EF00D56A28 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A4C059B291512EF00D56A28 /* Poppins-SemiBold.ttf */; };
+		6A4C05A0291512EF00D56A28 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A4C059C291512EF00D56A28 /* Poppins-Medium.ttf */; };
+		6A4C05A1291512EF00D56A28 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A4C059D291512EF00D56A28 /* Poppins-Regular.ttf */; };
+		6A4C05A2291512EF00D56A28 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A4C059E291512EF00D56A28 /* Poppins-Bold.ttf */; };
+		6A4C05A42915319A00D56A28 /* FileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4C05A32915319A00D56A28 /* FileVC.swift */; };
+		6AC26432291616D9001274DF /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC26431291616D9001274DF /* HomeVC.swift */; };
+		6AC32CD7291664E4006A90EB /* BankHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC32CD6291664E4006A90EB /* BankHeaderCell.swift */; };
+		6AC32CD929166597006A90EB /* BankModelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC32CD829166597006A90EB /* BankModelCell.swift */; };
+		6AC32CDB29166956006A90EB /* IBMPlexSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32CDA29166956006A90EB /* IBMPlexSans-Light.ttf */; };
+		6AC32CDD29166965006A90EB /* IBMPlexSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32CDC29166965006A90EB /* IBMPlexSans-Regular.ttf */; };
+		6AC32CDF29166978006A90EB /* IBMPlexSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32CDE29166978006A90EB /* IBMPlexSans-Medium.ttf */; };
+		6AC32CE12916698C006A90EB /* IBMPlexSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32CE02916698C006A90EB /* IBMPlexSans-SemiBold.ttf */; };
+		6AC32CE32916699F006A90EB /* IBMPlexSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6AC32CE22916699F006A90EB /* IBMPlexSans-Bold.ttf */; };
+		6AC44DD4291631600015D4C9 /* BankVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC44DD3291631600015D4C9 /* BankVC.swift */; };
+		6AC44DD7291631A40015D4C9 /* ChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC44DD6291631A40015D4C9 /* ChartVC.swift */; };
+		6AD003142916A67200B9D23A /* AssetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD003132916A67200B9D23A /* AssetCell.swift */; };
+		6AD003162916ABF200B9D23A /* ChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD003152916ABF200B9D23A /* ChartCell.swift */; };
+		7C4DFC2831526A22AEE61844 /* Pods_TextRecognition_TextRecognitionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C92BF39B9EC35B7DFE97189 /* Pods_TextRecognition_TextRecognitionUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DB5A6BA28A651E600A3EBA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DB5A69828A651E400A3EBA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DB5A69F28A651E400A3EBA8;
+			remoteInfo = TextRecognition;
+		};
+		3DB5A6C428A651E600A3EBA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DB5A69828A651E400A3EBA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DB5A69F28A651E400A3EBA8;
+			remoteInfo = TextRecognition;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1880AAA8DA203F401F066AE1 /* Pods-TextRecognitionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextRecognitionTests.debug.xcconfig"; path = "Target Support Files/Pods-TextRecognitionTests/Pods-TextRecognitionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		21BC93F3E3A41958B6B777F7 /* Pods-TextRecognition-TextRecognitionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextRecognition-TextRecognitionUITests.release.xcconfig"; path = "Target Support Files/Pods-TextRecognition-TextRecognitionUITests/Pods-TextRecognition-TextRecognitionUITests.release.xcconfig"; sourceTree = "<group>"; };
+		375649FF96168837B05B088A /* Pods_TextRecognition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextRecognition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38F7FD864D2C42ED652D98D9 /* Pods-TextRecognition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextRecognition.release.xcconfig"; path = "Target Support Files/Pods-TextRecognition/Pods-TextRecognition.release.xcconfig"; sourceTree = "<group>"; };
+		3D37660B28A6EC3C00BD7927 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3DB5A6A028A651E400A3EBA8 /* Renata.tech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Renata.tech.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB5A6A328A651E400A3EBA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3DB5A6A528A651E400A3EBA8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3DB5A6A728A651E400A3EBA8 /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
+		3DB5A6AD28A651E400A3EBA8 /* TextRecognition.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TextRecognition.xcdatamodel; sourceTree = "<group>"; };
+		3DB5A6AF28A651E600A3EBA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DB5A6B228A651E600A3EBA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3DB5A6B428A651E600A3EBA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DB5A6B928A651E600A3EBA8 /* TextRecognitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextRecognitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB5A6BD28A651E600A3EBA8 /* TextRecognitionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognitionTests.swift; sourceTree = "<group>"; };
+		3DB5A6C328A651E600A3EBA8 /* TextRecognitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextRecognitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB5A6C728A651E600A3EBA8 /* TextRecognitionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognitionUITests.swift; sourceTree = "<group>"; };
+		3DB5A6C928A651E600A3EBA8 /* TextRecognitionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognitionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		44FC64A9891236ABDB48D6A5 /* Pods-TextRecognition-TextRecognitionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextRecognition-TextRecognitionUITests.debug.xcconfig"; path = "Target Support Files/Pods-TextRecognition-TextRecognitionUITests/Pods-TextRecognition-TextRecognitionUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6741F681B2778E8B2D463E5D /* Pods-TextRecognition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextRecognition.debug.xcconfig"; path = "Target Support Files/Pods-TextRecognition/Pods-TextRecognition.debug.xcconfig"; sourceTree = "<group>"; };
+		6A092D11290F9B8B00C66CDD /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		6A092D13290F9C4A00C66CDD /* ScanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanModel.swift; sourceTree = "<group>"; };
+		6A092D15290F9F5D00C66CDD /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		6A092D17290FA13900C66CDD /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		6A092D19290FA6EF00C66CDD /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtension.swift; sourceTree = "<group>"; };
+		6A092D1B290FAFC900C66CDD /* ScanModelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanModelCell.swift; sourceTree = "<group>"; };
+		6A11C75E29101E1E00A7FD2B /* ScanHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanHeaderCell.swift; sourceTree = "<group>"; };
+		6A11C760291027FA00A7FD2B /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		6A4C059829150D9B00D56A28 /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
+		6A4C059B291512EF00D56A28 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		6A4C059C291512EF00D56A28 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		6A4C059D291512EF00D56A28 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		6A4C059E291512EF00D56A28 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		6A4C05A32915319A00D56A28 /* FileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileVC.swift; sourceTree = "<group>"; };
+		6AC26431291616D9001274DF /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		6AC32CD6291664E4006A90EB /* BankHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankHeaderCell.swift; sourceTree = "<group>"; };
+		6AC32CD829166597006A90EB /* BankModelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankModelCell.swift; sourceTree = "<group>"; };
+		6AC32CDA29166956006A90EB /* IBMPlexSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Light.ttf"; sourceTree = "<group>"; };
+		6AC32CDC29166965006A90EB /* IBMPlexSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Regular.ttf"; sourceTree = "<group>"; };
+		6AC32CDE29166978006A90EB /* IBMPlexSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Medium.ttf"; sourceTree = "<group>"; };
+		6AC32CE02916698C006A90EB /* IBMPlexSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		6AC32CE22916699F006A90EB /* IBMPlexSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Bold.ttf"; sourceTree = "<group>"; };
+		6AC44DD3291631600015D4C9 /* BankVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankVC.swift; sourceTree = "<group>"; };
+		6AC44DD6291631A40015D4C9 /* ChartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartVC.swift; sourceTree = "<group>"; };
+		6AD003132916A67200B9D23A /* AssetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCell.swift; sourceTree = "<group>"; };
+		6AD003152916ABF200B9D23A /* ChartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartCell.swift; sourceTree = "<group>"; };
+		75C8F7E7DF4FA9BF5738ADB7 /* Pods_TextRecognitionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextRecognitionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C92BF39B9EC35B7DFE97189 /* Pods_TextRecognition_TextRecognitionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextRecognition_TextRecognitionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF83A49C67FEE52CF889D6D7 /* Pods-TextRecognitionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextRecognitionTests.release.xcconfig"; path = "Target Support Files/Pods-TextRecognitionTests/Pods-TextRecognitionTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DB5A69D28A651E400A3EBA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05EDA44124D73A5CEACEED35 /* Pods_TextRecognition.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB5A6B628A651E600A3EBA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A9F01A96D3784C13F1E0FD0 /* Pods_TextRecognitionTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB5A6C028A651E600A3EBA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C4DFC2831526A22AEE61844 /* Pods_TextRecognition_TextRecognitionUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D37660928A6EBB600BD7927 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3DB5A6A328A651E400A3EBA8 /* AppDelegate.swift */,
+				3DB5A6A528A651E400A3EBA8 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3D37660A28A6EBDD00BD7927 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3DB5A6AF28A651E600A3EBA8 /* Assets.xcassets */,
+				3D37660B28A6EC3C00BD7927 /* Main.storyboard */,
+				3DB5A6B128A651E600A3EBA8 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3D37660D28A6EC8200BD7927 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				6AB8F69729163A3500AE2851 /* Views */,
+				6AC44DD52916316A0015D4C9 /* Controllers */,
+				6A092D11290F9B8B00C66CDD /* Utils.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		3DB5A69728A651E400A3EBA8 = {
+			isa = PBXGroup;
+			children = (
+				3DB5A6A228A651E400A3EBA8 /* TextRecognition */,
+				3DB5A6BC28A651E600A3EBA8 /* TextRecognitionTests */,
+				3DB5A6C628A651E600A3EBA8 /* TextRecognitionUITests */,
+				3DB5A6A128A651E400A3EBA8 /* Products */,
+				8C0C350DF127FFF6AFA4E9B8 /* Pods */,
+				92608E4F0AE3AD4E6AA3684E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3DB5A6A128A651E400A3EBA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DB5A6A028A651E400A3EBA8 /* Renata.tech.app */,
+				3DB5A6B928A651E600A3EBA8 /* TextRecognitionTests.xctest */,
+				3DB5A6C328A651E600A3EBA8 /* TextRecognitionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DB5A6A228A651E400A3EBA8 /* TextRecognition */ = {
+			isa = PBXGroup;
+			children = (
+				6A4C059A291512D500D56A28 /* Fonts */,
+				3D37660D28A6EC8200BD7927 /* Scene */,
+				3D37660928A6EBB600BD7927 /* App */,
+				3D37660A28A6EBDD00BD7927 /* Resources */,
+				3DB5A6B428A651E600A3EBA8 /* Info.plist */,
+				3DB5A6AC28A651E400A3EBA8 /* TextRecognition.xcdatamodeld */,
+			);
+			path = TextRecognition;
+			sourceTree = "<group>";
+		};
+		3DB5A6BC28A651E600A3EBA8 /* TextRecognitionTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DB5A6BD28A651E600A3EBA8 /* TextRecognitionTests.swift */,
+			);
+			path = TextRecognitionTests;
+			sourceTree = "<group>";
+		};
+		3DB5A6C628A651E600A3EBA8 /* TextRecognitionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3DB5A6C728A651E600A3EBA8 /* TextRecognitionUITests.swift */,
+				3DB5A6C928A651E600A3EBA8 /* TextRecognitionUITestsLaunchTests.swift */,
+			);
+			path = TextRecognitionUITests;
+			sourceTree = "<group>";
+		};
+		6A4C059A291512D500D56A28 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6A4C059E291512EF00D56A28 /* Poppins-Bold.ttf */,
+				6AC32CDE29166978006A90EB /* IBMPlexSans-Medium.ttf */,
+				6AC32CDC29166965006A90EB /* IBMPlexSans-Regular.ttf */,
+				6AC32CDA29166956006A90EB /* IBMPlexSans-Light.ttf */,
+				6AC32CE22916699F006A90EB /* IBMPlexSans-Bold.ttf */,
+				6AC32CE02916698C006A90EB /* IBMPlexSans-SemiBold.ttf */,
+				6A4C059C291512EF00D56A28 /* Poppins-Medium.ttf */,
+				6A4C059D291512EF00D56A28 /* Poppins-Regular.ttf */,
+				6A4C059B291512EF00D56A28 /* Poppins-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		6AB8F69729163A3500AE2851 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6A092D15290F9F5D00C66CDD /* GradientView.swift */,
+				6A092D19290FA6EF00C66CDD /* UserDefaultsExtension.swift */,
+				6A092D13290F9C4A00C66CDD /* ScanModel.swift */,
+				6A092D17290FA13900C66CDD /* Extension.swift */,
+				6A11C75E29101E1E00A7FD2B /* ScanHeaderCell.swift */,
+				6A092D1B290FAFC900C66CDD /* ScanModelCell.swift */,
+				6AC32CD6291664E4006A90EB /* BankHeaderCell.swift */,
+				6AC32CD829166597006A90EB /* BankModelCell.swift */,
+				6AD003132916A67200B9D23A /* AssetCell.swift */,
+				6AD003152916ABF200B9D23A /* ChartCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6AC44DD52916316A0015D4C9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3DB5A6A728A651E400A3EBA8 /* StartVC.swift */,
+				6A11C760291027FA00A7FD2B /* DetailVC.swift */,
+				6A4C059829150D9B00D56A28 /* SideMenuVC.swift */,
+				6A4C05A32915319A00D56A28 /* FileVC.swift */,
+				6AC26431291616D9001274DF /* HomeVC.swift */,
+				6AC44DD3291631600015D4C9 /* BankVC.swift */,
+				6AC44DD6291631A40015D4C9 /* ChartVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8C0C350DF127FFF6AFA4E9B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6741F681B2778E8B2D463E5D /* Pods-TextRecognition.debug.xcconfig */,
+				38F7FD864D2C42ED652D98D9 /* Pods-TextRecognition.release.xcconfig */,
+				44FC64A9891236ABDB48D6A5 /* Pods-TextRecognition-TextRecognitionUITests.debug.xcconfig */,
+				21BC93F3E3A41958B6B777F7 /* Pods-TextRecognition-TextRecognitionUITests.release.xcconfig */,
+				1880AAA8DA203F401F066AE1 /* Pods-TextRecognitionTests.debug.xcconfig */,
+				AF83A49C67FEE52CF889D6D7 /* Pods-TextRecognitionTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		92608E4F0AE3AD4E6AA3684E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				375649FF96168837B05B088A /* Pods_TextRecognition.framework */,
+				9C92BF39B9EC35B7DFE97189 /* Pods_TextRecognition_TextRecognitionUITests.framework */,
+				75C8F7E7DF4FA9BF5738ADB7 /* Pods_TextRecognitionTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DB5A69F28A651E400A3EBA8 /* TextRecognition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DB5A6CD28A651E600A3EBA8 /* Build configuration list for PBXNativeTarget "TextRecognition" */;
+			buildPhases = (
+				4C7F9E2B75C6B7AF24876310 /* [CP] Check Pods Manifest.lock */,
+				3DB5A69C28A651E400A3EBA8 /* Sources */,
+				3DB5A69D28A651E400A3EBA8 /* Frameworks */,
+				3DB5A69E28A651E400A3EBA8 /* Resources */,
+				270AF68DFFCE3E39833C4A96 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextRecognition;
+			productName = TextRecognition;
+			productReference = 3DB5A6A028A651E400A3EBA8 /* Renata.tech.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DB5A6B828A651E600A3EBA8 /* TextRecognitionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DB5A6D028A651E600A3EBA8 /* Build configuration list for PBXNativeTarget "TextRecognitionTests" */;
+			buildPhases = (
+				966DDCEC20F06011EBE1177B /* [CP] Check Pods Manifest.lock */,
+				3DB5A6B528A651E600A3EBA8 /* Sources */,
+				3DB5A6B628A651E600A3EBA8 /* Frameworks */,
+				3DB5A6B728A651E600A3EBA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DB5A6BB28A651E600A3EBA8 /* PBXTargetDependency */,
+			);
+			name = TextRecognitionTests;
+			productName = TextRecognitionTests;
+			productReference = 3DB5A6B928A651E600A3EBA8 /* TextRecognitionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3DB5A6C228A651E600A3EBA8 /* TextRecognitionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DB5A6D328A651E600A3EBA8 /* Build configuration list for PBXNativeTarget "TextRecognitionUITests" */;
+			buildPhases = (
+				AF84D2557D6F771ED4AC8E0F /* [CP] Check Pods Manifest.lock */,
+				3DB5A6BF28A651E600A3EBA8 /* Sources */,
+				3DB5A6C028A651E600A3EBA8 /* Frameworks */,
+				3DB5A6C128A651E600A3EBA8 /* Resources */,
+				0C32D75B17F78AA08F68DDFC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DB5A6C528A651E600A3EBA8 /* PBXTargetDependency */,
+			);
+			name = TextRecognitionUITests;
+			productName = TextRecognitionUITests;
+			productReference = 3DB5A6C328A651E600A3EBA8 /* TextRecognitionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DB5A69828A651E400A3EBA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					3DB5A69F28A651E400A3EBA8 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					3DB5A6B828A651E600A3EBA8 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 3DB5A69F28A651E400A3EBA8;
+					};
+					3DB5A6C228A651E600A3EBA8 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 3DB5A69F28A651E400A3EBA8;
+					};
+				};
+			};
+			buildConfigurationList = 3DB5A69B28A651E400A3EBA8 /* Build configuration list for PBXProject "TextRecognition" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DB5A69728A651E400A3EBA8;
+			productRefGroup = 3DB5A6A128A651E400A3EBA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DB5A69F28A651E400A3EBA8 /* TextRecognition */,
+				3DB5A6B828A651E600A3EBA8 /* TextRecognitionTests */,
+				3DB5A6C228A651E600A3EBA8 /* TextRecognitionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DB5A69E28A651E400A3EBA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AC32CE12916698C006A90EB /* IBMPlexSans-SemiBold.ttf in Resources */,
+				3D37660C28A6EC3C00BD7927 /* Main.storyboard in Resources */,
+				6A4C059F291512EF00D56A28 /* Poppins-SemiBold.ttf in Resources */,
+				6A4C05A2291512EF00D56A28 /* Poppins-Bold.ttf in Resources */,
+				3DB5A6B328A651E600A3EBA8 /* LaunchScreen.storyboard in Resources */,
+				6AC32CDF29166978006A90EB /* IBMPlexSans-Medium.ttf in Resources */,
+				6AC32CDD29166965006A90EB /* IBMPlexSans-Regular.ttf in Resources */,
+				6AC32CDB29166956006A90EB /* IBMPlexSans-Light.ttf in Resources */,
+				6AC32CE32916699F006A90EB /* IBMPlexSans-Bold.ttf in Resources */,
+				6A4C05A1291512EF00D56A28 /* Poppins-Regular.ttf in Resources */,
+				3DB5A6B028A651E600A3EBA8 /* Assets.xcassets in Resources */,
+				6A4C05A0291512EF00D56A28 /* Poppins-Medium.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB5A6B728A651E600A3EBA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB5A6C128A651E600A3EBA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C32D75B17F78AA08F68DDFC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TextRecognition-TextRecognitionUITests/Pods-TextRecognition-TextRecognitionUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TextRecognition-TextRecognitionUITests/Pods-TextRecognition-TextRecognitionUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TextRecognition-TextRecognitionUITests/Pods-TextRecognition-TextRecognitionUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		270AF68DFFCE3E39833C4A96 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TextRecognition/Pods-TextRecognition-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TextRecognition/Pods-TextRecognition-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TextRecognition/Pods-TextRecognition-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C7F9E2B75C6B7AF24876310 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TextRecognition-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		966DDCEC20F06011EBE1177B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TextRecognitionTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF84D2557D6F771ED4AC8E0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TextRecognition-TextRecognitionUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DB5A69C28A651E400A3EBA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A11C75F29101E1E00A7FD2B /* ScanHeaderCell.swift in Sources */,
+				6A092D12290F9B8B00C66CDD /* Utils.swift in Sources */,
+				6AD003142916A67200B9D23A /* AssetCell.swift in Sources */,
+				3DB5A6A828A651E400A3EBA8 /* StartVC.swift in Sources */,
+				6AC44DD7291631A40015D4C9 /* ChartVC.swift in Sources */,
+				3DB5A6A428A651E400A3EBA8 /* AppDelegate.swift in Sources */,
+				3DB5A6AE28A651E400A3EBA8 /* TextRecognition.xcdatamodeld in Sources */,
+				6A11C761291027FA00A7FD2B /* DetailVC.swift in Sources */,
+				6AC26432291616D9001274DF /* HomeVC.swift in Sources */,
+				6A092D16290F9F5D00C66CDD /* GradientView.swift in Sources */,
+				6A4C059929150D9B00D56A28 /* SideMenuVC.swift in Sources */,
+				6AC32CD7291664E4006A90EB /* BankHeaderCell.swift in Sources */,
+				6A4C05A42915319A00D56A28 /* FileVC.swift in Sources */,
+				6A092D14290F9C4A00C66CDD /* ScanModel.swift in Sources */,
+				3DB5A6A628A651E400A3EBA8 /* SceneDelegate.swift in Sources */,
+				6AD003162916ABF200B9D23A /* ChartCell.swift in Sources */,
+				6AC44DD4291631600015D4C9 /* BankVC.swift in Sources */,
+				6A092D1A290FA6EF00C66CDD /* UserDefaultsExtension.swift in Sources */,
+				6AC32CD929166597006A90EB /* BankModelCell.swift in Sources */,
+				6A092D1C290FAFC900C66CDD /* ScanModelCell.swift in Sources */,
+				6A092D18290FA13900C66CDD /* Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB5A6B528A651E600A3EBA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB5A6BE28A651E600A3EBA8 /* TextRecognitionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB5A6BF28A651E600A3EBA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB5A6C828A651E600A3EBA8 /* TextRecognitionUITests.swift in Sources */,
+				3DB5A6CA28A651E600A3EBA8 /* TextRecognitionUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DB5A6BB28A651E600A3EBA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DB5A69F28A651E400A3EBA8 /* TextRecognition */;
+			targetProxy = 3DB5A6BA28A651E600A3EBA8 /* PBXContainerItemProxy */;
+		};
+		3DB5A6C528A651E600A3EBA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DB5A69F28A651E400A3EBA8 /* TextRecognition */;
+			targetProxy = 3DB5A6C428A651E600A3EBA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DB5A6B128A651E600A3EBA8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DB5A6B228A651E600A3EBA8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DB5A6CB28A651E600A3EBA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DB5A6CC28A651E600A3EBA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DB5A6CE28A651E600A3EBA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6741F681B2778E8B2D463E5D /* Pods-TextRecognition.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = UDQC74DQA9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TextRecognition/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Your permission is required to use the camera";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Need library access to upload images";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.renata.tech;
+				PRODUCT_NAME = Renata.tech;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3DB5A6CF28A651E600A3EBA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38F7FD864D2C42ED652D98D9 /* Pods-TextRecognition.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = UDQC74DQA9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TextRecognition/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Your permission is required to use the camera";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Need library access to upload images";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.renata.tech;
+				PRODUCT_NAME = Renata.tech;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3DB5A6D128A651E600A3EBA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1880AAA8DA203F401F066AE1 /* Pods-TextRecognitionTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T6Q268MR8C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.info.TextRecognitionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TextRecognition.app/TextRecognition";
+			};
+			name = Debug;
+		};
+		3DB5A6D228A651E600A3EBA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF83A49C67FEE52CF889D6D7 /* Pods-TextRecognitionTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T6Q268MR8C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.info.TextRecognitionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TextRecognition.app/TextRecognition";
+			};
+			name = Release;
+		};
+		3DB5A6D428A651E600A3EBA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44FC64A9891236ABDB48D6A5 /* Pods-TextRecognition-TextRecognitionUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T6Q268MR8C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.info.TextRecognitionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TextRecognition;
+			};
+			name = Debug;
+		};
+		3DB5A6D528A651E600A3EBA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21BC93F3E3A41958B6B777F7 /* Pods-TextRecognition-TextRecognitionUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T6Q268MR8C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.info.TextRecognitionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TextRecognition;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DB5A69B28A651E400A3EBA8 /* Build configuration list for PBXProject "TextRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB5A6CB28A651E600A3EBA8 /* Debug */,
+				3DB5A6CC28A651E600A3EBA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DB5A6CD28A651E600A3EBA8 /* Build configuration list for PBXNativeTarget "TextRecognition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB5A6CE28A651E600A3EBA8 /* Debug */,
+				3DB5A6CF28A651E600A3EBA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DB5A6D028A651E600A3EBA8 /* Build configuration list for PBXNativeTarget "TextRecognitionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB5A6D128A651E600A3EBA8 /* Debug */,
+				3DB5A6D228A651E600A3EBA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DB5A6D328A651E600A3EBA8 /* Build configuration list for PBXNativeTarget "TextRecognitionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB5A6D428A651E600A3EBA8 /* Debug */,
+				3DB5A6D528A651E600A3EBA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3DB5A6AC28A651E400A3EBA8 /* TextRecognition.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3DB5A6AD28A651E400A3EBA8 /* TextRecognition.xcdatamodel */,
+			);
+			currentVersion = 3DB5A6AD28A651E400A3EBA8 /* TextRecognition.xcdatamodel */;
+			path = TextRecognition.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3DB5A69828A651E400A3EBA8 /* Project object */;
+}
